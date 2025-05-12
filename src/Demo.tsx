@@ -1,5 +1,13 @@
+import { useViewportSize } from './hooks/useViewportSize';
+
 function Demo() {
-    return <></>;
+    const { height, width } = useViewportSize();
+
+    return (
+        <>
+            Width: {width}, height: {height}
+        </>
+    );
 }
 
 export default Demo;
